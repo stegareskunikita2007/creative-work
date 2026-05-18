@@ -51,3 +51,5 @@ mystem.exe
 .qtc_clangd
 compile_commands.json
 moc_predefs.h
+build-*/
+build/
