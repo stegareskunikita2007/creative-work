@@ -1,0 +1,44 @@
+# Qt
+*.pro.user
+*.pro.user.*
+Makefile*
+*.Debug
+*.Release
+*.debug
+*.release
+build-*/
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Объектные файлы
+*.o
+*.obj
+
+# Исполняемые файлы (кроме spellchecker)
+*.exe
+!spellchecker_cli.exe
+*.dll
+*.so
+*.dylib
+
+# MyStem (нельзя распространять)
+mystem.exe
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Временные файлы
+*.tmp
+*.log
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ─── macOS ────────────────────────────────
+.DS_Store
