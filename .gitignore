@@ -40,7 +40,11 @@ mystem.exe
 *.rar
 *.7z
 
+<<<<<<< HEAD
 #macOS
+=======
+# macOS
+>>>>>>> 0af69622465f6f0a0cce07e925e515df63e56184
 .DS_Store
 
 # Qt Creator cache
