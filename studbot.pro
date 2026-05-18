@@ -23,8 +23,7 @@ FORMS += \
     mainwindow.ui
 
 SOURCES +=
-HEADERS += \
-    Helpers.h
+HEADERS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

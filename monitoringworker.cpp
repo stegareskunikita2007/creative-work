@@ -364,12 +364,12 @@ void MonitoringWorker::loadCoursesFromStepik()
     };
 
     loadedCourses.clear();
-    int pagesPerTopic = 1; // уменьшим до 2 страниц, чтобы быстрее загрузить
+    int pagesPerTopic = 1;
     // Строим очередь запросов
     QStringList requestUrls;
     for (const auto &topic : topics) {
         QString encoded = topic;
-        encoded.replace('+', "%2B"); // ручная замена
+        encoded.replace('+', "%2B");
         for (int page = 1; page <= pagesPerTopic; ++page) {
             requestUrls.append(QString("https://stepik.org/api/courses?search=%1&page=%2")
                                    .arg(encoded)
@@ -381,7 +381,7 @@ void MonitoringWorker::loadCoursesFromStepik()
     auto *pending = new QAtomicInt(totalRequests);
     auto *urlQueue = new QStringList(requestUrls);
     auto *timer = new QTimer(this);
-    auto *networkManager = this->networkManager; // предполагаем, что networkManager уже есть в классе
+    auto *networkManager = this->networkManager;
 
     // Таймаут общего ожидания — 40 секунд
     QTimer::singleShot(40000, this, [this, pending, timer, urlQueue]() {

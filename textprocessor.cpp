@@ -4,7 +4,6 @@
 
 TextProcessor::TextProcessor(QObject *parent) : QObject(parent)
 {
-// Укажите правильный путь к MyStem (скачайте с https://yandex.ru/dev/mystem/)
 #ifdef Q_OS_WIN
     mystemPath = "./mystem.exe";
 #else
