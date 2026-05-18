@@ -88,3 +88,7 @@ mystem.exe
 # ─── macOS ────────────────────────────────
 >>>>>>> db027f8d55f96d96792ff5e1c9f98e88a0618238
 .DS_Store
+# Qt Creator cache
+.qtc_clangd
+compile_commands.json
+moc_predefs.h
