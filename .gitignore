@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Qt
 *.pro.user
 *.pro.user.*
@@ -41,4 +42,49 @@ mystem.exe
 *.7z
 
 # ─── macOS ────────────────────────────────
+=======
+# Qt
+*.pro.user
+*.pro.user.*
+Makefile*
+*.Debug
+*.Release
+*.debug
+*.release
+build-*/
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Объектные файлы
+*.o
+*.obj
+
+# Исполняемые файлы (кроме spellchecker)
+*.exe
+!spellchecker_cli.exe
+*.dll
+*.so
+*.dylib
+
+# MyStem (нельзя распространять)
+mystem.exe
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Временные файлы
+*.tmp
+*.log
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ─── macOS ────────────────────────────────
+>>>>>>> db027f8d55f96d96792ff5e1c9f98e88a0618238
 .DS_Store
